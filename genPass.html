@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="pass-space">
+            </div>
+            <div class="options">
+            <div class="options-checkbox">
+                    <label for="options-checkbox-ele">Length</label>
+                    <input type='Number' id='options-checkbox-ele' value='5' min="5" max="20" />
+                </div>
+                <div class="options-checkbox">
+                    <label for="options-checkbox-ele">Numbers</label>
+                    <input type='checkbox' id='options-checkbox-ele'/>
+                </div>
+                <div class="options-checkbox">
+                    <label for="options-checkbox-ele">UpperCase</label>
+                    <input type='checkbox' id='options-checkbox-ele'/>
+                </div>
+                <div class="options-checkbox">
+                    <label for="options-checkbox-ele">LowerCase</label>
+                    <input type='checkbox' id='options-checkbox-ele'/>
+                </div>
+                <div class="options-checkbox">
+                    <label for="options-checkbox-ele">Symbols</label>
+                    <input type='checkbox' id='options-checkbox-ele'/>
+                </div>
+                <div>
+                 <button onclick='generatePassword()'>GeneratePassword</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script src="genPass.js" async defer></script>
+    </body>
+</html>
