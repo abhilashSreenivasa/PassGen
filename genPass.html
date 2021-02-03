@@ -9,36 +9,42 @@
     </head>
     <body>
         <div class="container">
+        <header>Password Generator</header>
             <div class="pass-space">
+            <span id="pass-space-text">
+            </span>
+            <img id="clip" src="clipboard-regular.svg" title="Copy Password">
             </div>
             <div class="options">
             <div class="options-checkbox">
-                    <label for="options-checkbox-ele">Length</label>
-                    <input type='Number' id='options-checkbox-ele' value='5' min="5" max="20" />
+                    <label for="options-checkbox-ele" id='number-label'>Length(5-20)</label>
+                    <input type='Number'id="number-input" class='options-checkbox-ele' value='10' min="5" max="20" />
                 </div>
                 <div class="options-checkbox">
                     <label for="options-checkbox-ele">Numbers</label>
-                    <input type='checkbox' id='options-checkbox-ele'/>
+                    <input type='checkbox' class='options-checkbox-ele' id="numbers" checked/>
                 </div>
                 <div class="options-checkbox">
                     <label for="options-checkbox-ele">UpperCase</label>
-                    <input type='checkbox' id='options-checkbox-ele'/>
+                    <input type='checkbox' class='options-checkbox-ele' id="upper-case" checked/>
                 </div>
                 <div class="options-checkbox">
                     <label for="options-checkbox-ele">LowerCase</label>
-                    <input type='checkbox' id='options-checkbox-ele'/>
+                    <input type='checkbox' class='options-checkbox-ele' id="lower-case" checked/>
                 </div>
                 <div class="options-checkbox">
                     <label for="options-checkbox-ele">Symbols</label>
-                    <input type='checkbox' id='options-checkbox-ele'/>
+                    <input type='checkbox' class='options-checkbox-ele' id="symbols" checked/>
                 </div>
-                <div>
-                 <button onclick='generatePassword()'>GeneratePassword</button>
-                </div>
+
+                 <button id="button">
+                 <span>Generate Password</span>
+                 </button>
+                
             </div>
             </div>
         </div>
 
-        <script src="genPass.js" async defer></script>
+        <script src="genPass.js"></script>
     </body>
 </html>
